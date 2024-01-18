@@ -1,14 +1,44 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	color: white;
-	font-size: 2rem;
-	background-image: url('./assets/main.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: white;
+  background-image: url("./assets/Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header,
+main,
+footer {
+  display: grid;
+  grid-template-columns: 200px 150px auto;
+}
+
+.header1 {
+  text-align: center;
+  background-color: bisque;
+  opacity: 0.8;
+}
+
+#header1,
+#header2 {
+  font-size: 6em;
+  padding-top: 2rem;
+}
+
+#header2 {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("./assets/Mobile.jpg");
+  }
 }
